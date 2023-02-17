@@ -1,0 +1,54 @@
+<%- include("header") -%>
+
+
+  <% if( resCode =="200" ){ %>
+
+        <div class="content2">
+          <div class="cityName">
+            <h1>
+              <%=cityName%>
+            </h1>
+          </div>
+
+          <div class="leftBox">
+            <ul>
+              <li>Temp = <%=temp%>
+              </li>
+              <li>Feels = <%=feels%>
+              </li>
+              <li>Wind Speed = <%=windSpeed%>
+              </li>
+              <li>Humidity = <%=humidity%>
+              </li>
+            </ul>
+          </div>
+          <div class="rightBox">
+
+
+            <img src="
+              <%= imgURL %>
+               " class="wImg">
+          </div>
+
+        </div>
+        <% } else {%>
+
+
+          <div class="content2">
+            <div class="cityName">
+              <h1>
+                oops! error 404 👀
+              </h1>
+<div class="error">
+
+              <p>Make sure spelling of City name is Correct</p>
+              <br><br>
+              <a href="/" id="home" class="btnerror">Go Back</a>
+            </div>
+            </div>
+          </div>
+
+
+          <% } %>
+
+            <%- include("footer")-%>

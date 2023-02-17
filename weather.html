@@ -1,26 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Calligraffitti&family=Montserrat:ital,wght@1,200&family=Noto+Sans&family=Playfair+Display+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Weather App</title>
-</head>
-<body>
-    <form action="/" method="post">
-    <label for="cityInput">City Name: </label>
-    <input id="cityInput" type="text" name="cityName">
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/" id="home">Home</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="content">
+      <img class="img1 c" src="/images/1.png" alt="" />
+      <img class="img2 c" src="/images/2.png" alt="" />
 
-    
-    <br>
-    
-    <input type="radio" name="unit" value="c">
-    <label for="celcius">Celcius</label>
-    <input type="radio" name="unit" value="f">
-    <label for="fahrenheit">Fahrenheit</label>
-    <br>
+      <h1>Weather App</h1>
+      <img class="img3 c" src="/images/3.png" alt="" />
 
-    <button type="submit">Go</button>
-    </form>
-</body>
+      <form action="/" method="post">
+        <!-- <label for="cityInput">City Name: </label> -->
+        <div class="search">
+          <input
+            id="cityInput"
+            type="text"
+            name="cityName"
+            placeholder="City Name"
+          />
+
+          <button type="submit" id="btn"><i class="fa fa-search"></i></button>
+        </div>
+        <img class="img4 c" src="/images/4.png" alt="" />
+
+        <br />
+        <img class="img5 c" src="/images/5.png" alt="" />
+
+        <div class="radiocontainer">
+          <input type="radio" name="unit" value="c" />
+          <label for="celcius">Celcius</label>
+          <input type="radio" name="unit" value="f" />
+          <label for="fahrenheit">Fahrenheit</label>
+        </div>
+        <br />
+        <img class="img6 c" src="/images/6.png" alt="" />
+      </form>
+    </div>
+    <div class="about" id="about">
+      <h1>ABOUT</h1>
+      <div class="para">
+        <p>
+          Welcome to the Weather App, your go-to source for up-to-date weather
+          information from around the world! This app provides real-time data on
+          the current weather conditions for any city you search, using an
+          <strong>API</strong> to gather the latest information. 
+          <br>
+          With our easy-to-use interface, you can quickly check the current temperature,
+          humidity, wind speed, and other key weather indicators for your chosen
+          location. 
+          <br><br>
+          This WebApp is built with
+          <br><ul> 
+            <li>HTML</li>
+             
+            <li>CSS (No framework is used)</li>
+            
+            <li>JavaScript</li>
+          
+          <li> Node.js</li>
+          
+           <li>Express.js</li>
+            
+            
+        </ul>
+        </p>
+      </div>
+      <div class="image">
+        <img src="/images/giphy.gif" frameBorder="0" class="giphy" />
+      </div>
+    </div>
+
+    <footer>
+      Made with 💗 in India.
+      <br />
+      <a href="https://github.com/lakshaydureja"
+        ><i class="fa-brands fa-github"></i
+      ></a>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/6413560cbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
