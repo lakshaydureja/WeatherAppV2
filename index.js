@@ -27,7 +27,9 @@ app.post("/", function (req, res) {
 
 
   const query = req.body.cityName;
-  const apiKey = "ba6e4ce767c6824f37d019e603c9ff30";
+  //Api Key Left Empty due to security concerns
+// fill it to use the app.
+  const apiKey = "";
   var unit;
   var unitName;
 
