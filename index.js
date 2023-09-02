@@ -29,7 +29,8 @@ app.post("/", function (req, res) {
   const query = req.body.cityName;
   //Api Key Left Empty due to security concerns
 // fill it to use the app.
-  const apiKey = "";
+  //Trash api key is used
+  const apiKey = "ba6e4ce767c6824f37d019e603c9ff30";
   var unit;
   var unitName;
 
